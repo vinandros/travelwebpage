@@ -1,0 +1,30 @@
+{
+  "name": "travelwebpage",
+  "version": "1.0.0",
+  "description": "travel webpage",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinandros/travelwebpage.git"
+  },
+  "keywords": [
+    "travel"
+  ],
+  "type": "module",
+  "author": "Kevin Alvarado V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinandros/travelwebpage/issues"
+  },
+  "homepage": "https://github.com/vinandros/travelwebpage#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
