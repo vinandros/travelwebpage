@@ -1,4 +1,31 @@
 extends ./layout/index
 
 block content
-    p Nosotros
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="nosotros imagen", class="img-fluid")
+            .col-md-7
+                h1= page
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac magna posuere, egestas urna sit amet, convallis massa. Nam pellentesque tristique sagittis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat architecto possimus labore illo ipsa debitis adipisci cum unde aperiam sequi excepturi.
+
+                p Nam blandit rutrum ipsum et varius. Quisque suscipit turpis in lacinia suscipit. Pellentesque vel euismod lorem, ac tincidunt nulla. Duis at pulvinar lorem, eget eleifend purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec leo quam, posuere nec hendrerit sagittis.
+
+                p Pellentesque nec ullamcorper quam. Cras elementum urna sed ex bibendum rhoncus ut in nisl. Fusce pretium mauris libero, non convallis purus vulputate ac. Cras semper, nunc sed ultrices venenatis, leo ex euismod turpis, id tincidunt est leo eu ante. Morbi vestibulum fringilla elit sed porta.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui consectetur dolores, at, repudiandae asperiores est illum natus quidem repellat culpa cupiditate, ducimus tempore? Cupiditate nam enim ab tenetur explicabo?
+
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui consectetur dolores, at, repudiandae asperiores est illum natus quidem repellat culpa cupiditate, ducimus tempore? Cupiditate nam enim ab tenetur explicabo?
+                
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los mejores Precios
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui consectetur dolores, at, repudiandae asperiores est illum natus quidem repellat culpa cupiditate, ducimus tempore? Cupiditate nam enim ab tenetur explicabo?
