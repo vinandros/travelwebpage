@@ -3,13 +3,16 @@ import { Testimonial } from "../models/Testimonial.js";
 
 const mainPage = async (req, res) => {
   // getting 3 travels
-
+  const promiseDB = [];
+  promiseDB.push(Travel.findAll({ limit: 3 }));
+  promiseDB.push(Testimonial.findAll({ limit: 3 }));
   try {
-    const travels = await Travel.findAll({ limit: 3 });
+    const result = await Promise.all(promiseDB);
     res.render("main", {
       page: "Inicio",
       classCss: "home",
-      travels,
+      travels: result[0],
+      testimonials: result[1],
     });
   } catch (error) {
     console.log(error);
